@@ -5,15 +5,38 @@
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Formulário de Contato</title>
+
+
+            <style>
+                body{
+                    background: rgb(251,7,7);
+                    background: linear-gradient(90deg, rgba(251,7,7,1) 1%, rgba(0,194,255,1) 100%);
+                }
+                form{
+                    width: 40%;
+                    min-width: 350px;
+                    background-color: white;
+                    border-radius: 5px;
+                    box-shadow: 0 15px 30px rgba(0,0,0, 0.3);
+                    margin: 100px auto;
+                }
+            </style>
     </head>
+
     <body>
         <form action="https://formsubmit.co/luancraftsg@gmail.com" method="POST">
-            <h1>Formulario de Contato</h1>
-
-            <input type="text" name="name" placeholder="Nome" required>
+            <h1 >Entre em Contato</h1>
+            <h3 >Digite o seu Nome...</h3>
+            <input type="text" name="name" placeholder="Nome" required >
+            <br>
+            <h3 >Digite o seu E-mail...</h3>
             <input type="email" name="email" placeholder="E-mail" required>
-            <button type="submit">Send</button>
-       </form>
-       </form>
+            <br>
+            <h3 >Digite oque você deseja falar</h3>
+            <textarea name="message" placeholder="Digite sua mensagem..." required></textarea>
+            <br>
+            <br>
+            <button  type="submit">Enviar</button>
+        </form>
     </body>
 </html>
